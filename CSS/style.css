@@ -1,0 +1,402 @@
+@import url("Predet.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}s
+
+body {
+    font-size: 1.2rem;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.elpapadeloshelados>* {
+
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.elpapadeloshelados {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+    grid-template:
+        "header"
+        "main"
+        "aside"
+        "footer"
+    ;
+
+    .header {
+        grid-area: header;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .main {
+        grid-area: main;
+        background-color: rgb(253, 253, 253)
+    }
+
+    .aside {
+        grid-area: aside;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: rgb(255, 255, 255);
+    }
+
+    @media (min-width:768px) {
+        grid-template:
+            "header aside" 270px
+            "main main" auto
+            "footer footer" 150px
+            / 300px auto
+        ;
+    }
+
+    @media (min-width:992px) {
+        grid-template:
+            "aside header" auto
+            "aside main" auto
+            "footer main" auto
+            / 250px auto
+        ;
+    }
+}
+
+.logo_head {
+    width: clamp(80px, 60%, 140px);
+    height: auto;
+}
+
+.mainContainer {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tarjeta-juego {
+    display: flex;
+    flex-direction: column;
+    /* Ancho dinámico: mínimo 160px, ideal en pantalla, máximo 200px */
+    width: clamp(160px, 30vw, 220px);
+}
+
+.portada-juego {
+    width: 100%;
+    height: 250px;
+    /* Alto parejo para todas */
+    object-fit: contain;
+}
+
+.whatsapp-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(60%);
+}
+
+.contacto {
+    margin: 30px;
+    display: inline-flex;
+    line-height: 0;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.terminos {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.terminos, .about_us,
+a {
+    text-decoration: none;
+}
+
+.terminos, .about_us,
+a:hover {
+    color: black;
+}
+
+.email-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.email-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    filter: brightness(60%);
+}
+
+.tarjeta-juego a {
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.767);
+    border-radius: 12px;
+}
+
+.tarjeta-juego a:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.767);
+    border-radius: 12px;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.aside {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+   
+}
+.menu-de-juegos ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-de-juegos a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.767);
+    padding: 10px;  
+    border-radius: 12px;
+    background-color: rgb(0, 0, 0);
+    font-style: italic;
+    text-decoration-color: aliceblue;
+}
+.menu-de-juegos p {
+    color: white;   
+}
+.menu-de-juegos li:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-out;
+}
+.CatalogoPs5:hover {
+    background-color: rgb(255, 255, 255);
+}
+.CatalogoPs5:hover p {
+    color: black;
+}
+.CatalogoPs4:hover {
+    background-color: rgb(16, 83, 252);
+    color: white;
+}
+.CatalogoXbox:hover {
+    background-color: #007F00;
+    color: white;
+}
+.trailer1, .trailer2 {
+    width: 30%;
+    height: auto;
+}
+
+
+
+/* ========================================================== */
+/* ESTILOS DEL CARRITO LATERAL (SIDEBAR)                      */
+/* ========================================================== */
+.boton-abrir-carrito {
+    text-decoration: none;
+    color: white;
+    display: block;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.767);
+    padding: 10px;  
+    border-radius: 12px;
+    background-color: #000000; /* Naranja bonito para el carrito */
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    margin-top: 15px;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.boton-abrir-carrito:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-out;
+    background-color: #000000;
+}
+
+/* El fondo oscuro que aparece cuando el carrito esta abierto */
+.overlay-carrito {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Transparente oscurecido */
+    z-index: 999; /* Por debajo del carrito pero por encima de la pagina */
+}
+
+/* La caja lateral del carrito */
+.carrito-lateral {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Escondido por defecto hacia la derecha */
+    width: 350px;
+    height: 100vh;
+    background-color: #fffdfd; /* Color oscuro */
+    color: white;
+    box-shadow: -4px 0 15px rgba(0,0,0,0.8);
+    transition: right 0.4s ease-in-out; /* Animacion suave de deslizamiento */
+    z-index: 1000; /* Siempre por encima de todo */
+    overflow-y: auto; /* Scroll si hay muchos productos */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Clase que aplicamos con JavaScript para mostrarlo */
+.carrito-lateral.abierto {
+    right: 0; /* Aparece en la pantalla */
+}
+
+/* Boton para cerrar el carrito (la X) */
+.cerrar-carrito {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.cerrar-carrito:hover {
+    background-color: #000000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.767);
+}
+
+/* Contenedor principal de los items adentro del carrito */
+.items-del-carrito {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre productos */
+}
+
+/* Estructura visual de cada juego dentro del carrito (fachada del index) */
+.producto-en-carrito {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.producto-en-carrito img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain; /* Para que la imagen no se deforme */
+    margin-bottom: 10px;
+}
+
+.producto-en-carrito h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.producto-en-carrito h2 {
+    color: #007F00;
+    margin-bottom: 10px;
+}
+
+/* Boton rojo para borrar un juego del carrito */
+.boton-eliminar {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.boton-eliminar:hover {
+    background-color: #000000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.767);
+}
+
+/* Mensaje cuando el carrito esta vacio */
+.carrito-vacio {
+    text-align: center;
+    margin-top: 50px;
+    font-style: italic;
+    color: #ccc;
+}
+
+/* Estilo para el boton de "A�adir al Carrito" en la pagina del juego */
+.btn-agregar-carrito {
+    background-color: #007F00;
+    color: white;
+    padding: 15px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+    width: auto;
+    height: auto;
+}
+
+.btn-agregar-carrito:hover {
+    transform: scale(1.05);
+    background-color: #006600;
+}
+.btn-finalizar-compra {
+    background-color: #000000;
+    color: white;
+    padding: 15px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+    width: auto;
+    height: auto;
+}
