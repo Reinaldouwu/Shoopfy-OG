@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/gtaVi.css">
+    <link rel="stylesheet" href="../CSS/Predet.css">
+    <link rel="icon" type="image/png" href="../imgs/Logo_Juego.avif">
+    <title>Shopfy</title>
+</head>
+
+<body class="elpapadeloshelados">
+  <header class="header">
+    <h1> Shopfy </h1>
+    <p>una tienda de juegos para ti.</p>
+    <img src="../imgs/Principal.jpg" alt="logo" class="logo_head">
+  </header>
+
+
+  <main class="main">
+    <section class="juego-section">
+      <article class="juego-article">
+        <img src="../imgs/forzahorizon5.jpg" alt="Portada forza horizon 5" class="portada-juego">
+        <h3>Forza Horizon 5</h3>
+        <h2>29,99$</h2>
+        <p>Forza Horizon 5 es un videojuego de carreras desarrollado por Playground Games.<br> Es la quinta entrega de la serie Forza Horizon y se espera que ofrezca una experiencia de conducción aún más realista y emocionante.</p>
+      <h4>Trailers</h4>
+      <iframe
+          width="100%"
+          height="315" 
+          src="https://www.youtube.com/embed/Rv7xLt5yNsM?si=NLeeC3B_WBUQcpfF" 
+          title="YouTube video player"
+          frameborder="0" 
+          allow= "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowful1lscreen
+          class="trailer1"></iframe>
+        <iframe
+          width="100%"
+          height="315" 
+          src="https://www.youtube.com/embed/FYH9n37B7Yw?si=UNiYBsmUiCtlGbVA" 
+          title="YouTube video player"
+          frameborder="0" 
+          allow= "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowful1lscreen
+          class="trailer2"></iframe>
+          <h4>Trailer Gameplay</h4>
+        <iframe  
+          width="58%"
+          height="315" 
+          src="https://www.youtube.com/embed/YY2GX_7wR7Y?si=8yfAw-WYGe51l-_n" 
+          title="YouTube video player"
+          frameborder="0" 
+          allow= "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowful1lscreen
+          class="trailer3">
+        </iframe>>
+      
+      </article>
+    </section>
+    <button 
+      class="btn-agregar-carrito" 
+      onclick="agregarDesdeHtml('fh5', 'Forza Horizon 5', 29.99, '../imgs/forzahorizon5.jpg')">
+       Añadir al Carrito
+    </button>
+  </main>
+
+
+ <aside class="aside">
+  <nav class="menu-de-juegos">
+    <ul>
+      <li><a href="../HTML/index.html" class="Menuprincipal"> <p>menu principal🏡</p></a></li>
+      <li><a href="../catalogo/Juegos-ps5.html" class="CatalogoPs5"> <p>Juegos de Ps5</p></a></li>
+      <li><a href="../catalogo/Juegos-ps4.html" class="CatalogoPs4"> <p>Juegos de Ps4</p></a></li>
+      <li><a href="../catalogo/Juegos-Xbox.html" class="CatalogoXbox"> <p>Juegos de Xbox</p></a></li>
+      <div id="react-carrito"></div>
+    </ul>
+  </nav>
+
+</aside>
+
+
+  <footer class="footer">
+   <section class="terminos">
+    <nav>
+      <h2>informacion</h2>
+      <a href="../HTML/terminos.html" target="_blank">Politica de privacidad</a>
+    </nav>
+     <nav  class="about_us">
+      <a href="../HTML/aboutus..html" target="_blank">sobre nosotros</a>
+   </nav>
+    </section>
+    <section class="contacto">
+      <h2>contactanos</h2>
+      <nav>
+      <a href="https://wa.me/584243392970" target="_blank" rel="noopener noreferrer"> <img src="../imgs/WhatsApp_icon.png" alt="WhatsApp"
+          class="whatsapp-icon"> </a>
+      <a href="mailto:reinaldosanz17@gmail.com"> <img src="../imgs/gmail.jpg" alt="Email" class="email-icon"> </a>
+    </nav>
+    </section>
+  </footer>
+  
+  <!-- 1. El motor principal de React -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+  <!-- 2. El puente entre React y el navegador -->
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- 3. El traductor de JSX (Babel) -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- 4. Tu archivo JavaScript leido como codigo Babel -->
+  <script type="text/babel" src="../Js/carrito.js"></script>
+</body>
+</html>
