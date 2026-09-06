@@ -11,7 +11,67 @@ body {
     padding: 20px;
     min-height: 100vh;
 }
+/* ==========================================
+   ESTILOS BASE (MODO CLARO POR DEFECTO)
+   ========================================== */
+/* Botón de cambio de tema */
+.boton-tema {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #1a1a1a;
+  background-color: transparent;
+  color: #1a1a1a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
+.boton-tema:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+
+/* ==========================================
+   ESTILOS EN MODO OSCURO (CLASE .oscuro)
+   ========================================== */
+body.oscuro {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Ajustes de tarjetas de productos y elementos del carrito */
+body.oscuro .tarjeta-juego,
+body.oscuro .producto-en-carrito,
+body.oscuro .carrito-contenedor {
+  background-color: #1e1e1e;
+  border-color: #333333;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Ajuste del botón en modo oscuro */
+body.oscuro .boton-tema {
+  border-color: #ffffff;
+  color: #ffffff;
+}/* ==========================================
+   ESTILOS BASE (MODO CLARO POR DEFECTO)
+   ========================================== */
+/* Botón de cambio de tema */
+.boton-tema {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #1a1a1a;
+  background-color: transparent;
+  color: #1a1a1a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boton-tema:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
 .elpapadeloshelados>* {
 
     padding: 10px;
@@ -32,22 +92,18 @@ body {
 
     .header {
         grid-area: header;
-        background-color: rgb(255, 255, 255);
     }
 
     .main {
         grid-area: main;
-        background-color: rgb(253, 253, 253)
     }
 
     .aside {
         grid-area: aside;
-        background-color: rgb(255, 255, 255);
     }
 
     .footer {
         grid-area: footer;
-        background-color: rgb(255, 255, 255);
     }
 
     @media (min-width:768px) {
@@ -399,4 +455,28 @@ a:hover {
     transition: transform 0.2s ease;
     width: auto;
     height: auto;
+}
+/* Contenedor de las tarjetas de React */
+.grilla-juegos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tarjeta de cada juego */
+.juego {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.juego img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }

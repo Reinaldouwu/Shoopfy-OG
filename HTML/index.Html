@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/Predet.css">
   <link rel="icon" type="image/png" href="../imgs/Logo_Juego.avif">
-  <title>AvifShop</title>
+  <title>Shopfy</title>
 </head>
 
 <body class="elpapadeloshelados">
@@ -19,59 +20,13 @@
   <main class="main">
 
     <h2>🔥🔥DESTACADAS🔥🔥</h2>
-    <section class="mainContainer">
-      <article class="tarjeta-juego">
-        <a href="../juegos html/GTA6.html" class="Link-gta6">
-          <img src="../imgs/gta6log.jpg" alt="Portada gta 6" class="portada-juego">
-          <h3>Grand Theft auto VI</h3>
-          <h2>69,99$</h2>
-        </a>
-      </article>
-      <article class="tarjeta-juego"
-      > <a href="../juegos html/blackops.html" class="Link-callofduty">
-          <img src="../imgs/blackops4 copy.jpg" alt="portada call of duty blackops 4" class="portada-juego">
-          <h3>Call of Duty BlackOps IV</h3>
-          <h1>59,99$</h1>
-        </a>
-      </article>
-      <article class="tarjeta-juego">
-         <a href="../juegos html/spiderman2.html" class="Link-spiderman2">
-          <img src="../imgs/spiderman2.jpg" alt="spiderman 2 ps5" class="portada-juego">
-          <h3>spiderman 2</h3>
-          <h1>25,66$</h1>
-        </a>
-      </article>
-      <article class="tarjeta-juego">
-        <a href="../juegos html/eldenring.html" class="Link-eldenring">
-          <img src="../imgs/eldenring.jpg" alt="Portada elden ring" class="portada-juego">
-          <h3>Elden Ring</h3>
-          <h1>59,99$</h1>
-        </a>
-      </article>
-      <article class="tarjeta-juego">
-        <a href="../juegos html/Fh5.html" class="Link-forzahorizon5">
-          <img src="../imgs/forzahorizon5.jpg" alt="Portada forza horizon 5" class="portada-juego">
-          <h3>Forza Horizon 5</h3>
-          <h1>29,99$</h1>
-        </a>
-      </article>
-      <article class="tarjeta-juego">
-        <a href="../juegos html/RD2.html" class="RD2">
-          <img src="../imgs/RD2.jpg" alt="Portada red dead redemption 2" class="portada-juego">
-          <h3>Red Dead Redemption 2</h3>
-          <h1>15,99$</h1>
-        </a>
-      </article>
-    </section>
+    <section id="Catalogodejuegos" style={{width: "100%"}}></section>
   </main>
 
 
  <aside class="aside">
   <nav class="menu-de-juegos">
     <ul>
-      <li><a href="../catalogo/Juegos-ps5.html" class="CatalogoPs5"> <p>Juegos de Ps5</p></a></li>
-      <li><a href="../catalogo/Juegos-ps4.html" class="CatalogoPs4"> <p>Juegos de Ps4</p></a></li>
-      <li><a href="../catalogo/Juegos-Xbox.html" class="CatalogoXbox"> <p>Juegos de Xbox</p></a></li>
       <div id="react-carrito"></div>
     </ul>
   </nav>
@@ -108,6 +63,7 @@
 
 <!-- 4. Tu archivo JavaScript leido como código Babel -->
 <script type="text/babel" src="../Js/carrito.js"></script>
+<script type="text/babel" src="../Js/filtro.js"></script>
 </body>
 
 </html>
