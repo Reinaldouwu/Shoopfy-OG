@@ -6,6 +6,7 @@ const Catalogodejuegos = () => {
         { id: 4, titulo: "Elden Ring", consola: "ps4", precio: 59.99, imagen: "../imgs/eldenring.jpg", enlace: "../juegos html/eldenring.html", claseEnlace: "Link-eldenring" },
         { id: 5, titulo: "Forza Horizon 5", consola: "xbox", precio: 29.99, imagen: "../imgs/forzahorizon5.jpg", enlace: "../juegos html/Fh5.html", claseEnlace: "Link-forzahorizon5" },
         { id: 6, titulo: "Red Dead Redemption 2", consola: "ps4", precio: 15.99, imagen: "../imgs/RD2.jpg", enlace: "../juegos html/RD2.html", claseEnlace: "RD2" }
+        
    ];
 
     const [categoria, setCategoria] = React.useState("todos");
